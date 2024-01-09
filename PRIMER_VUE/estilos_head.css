@@ -1,0 +1,107 @@
+/*BOTONES DE NAVEGACIÓN DEL HEADER*/
+
+.btnnav{
+  display: inline-block; /*Horientacion de Boton*/
+  margin-right: 50px;
+  margin-bottom: 100px;
+  text-align: center; /*No afecta pero se deja*/
+  padding: 14px 22px 14px 22px; /*tamaño espacio.arr&espacio.derc&espacio.abj&espacio.izq*/
+  border: 2px solid #5E7C67; /*Color Borde*/ 
+  color: #5E7C67; /*Color del Text*/
+  font-size: 20px; /*Tamaño del text*/
+  text-align: center;/*Ubicacion del text*/
+  letter-spacing: 0.5cqmin; /*Espacio entre letras*/
+  text-decoration: none; 
+  font-family:'MiFuente'; /*Tipo de fuente*/
+  cursor: pointer;
+  background-color: #CBE3C7; /*Color Fondo*/
+  border-radius:50px;
+  position: relative;
+  overflow: hidden;/*Contenido fuera del borde se oculta*/
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;/*Velocidad de Trans*/
+  background: transparent;/*Forndo transpar*/
+  z-index:10;/*Orden de superposicion*/
+}
+
+.btnnav:last-child {
+  margin-right: 0;
+}
+
+.btnnav:hover{
+  border: transparent;
+  color: #5E7C67;/*Color letra*/
+}
+
+.btnnav::after/*bloque del medio*/{
+  content: '';/*Ultima capa del bloque 2*/
+  width: 0%;/*ancho bloque2*/
+  height: 100%;/*alto bloque2*/
+  display: block;/*bloque que ocupará todo el ancho disponible dentro del botón*/
+  background: #5E7C67;/*Color bloque*/
+  border: 0px transparent;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg); 
+  transform: skewX(-20deg); /*Transformacion de inclinacion horizontal*/
+  left: -10%;/*Inicio de la transicion*/
+  top: 0;/*margen superior de la transicion*/
+  z-index: -15;/*No se superpone a nada*/
+  -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+  -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+  transition: all .4s cubic-bezier(.2,.95,.57,.99);/*propiedades de transicion*/
+  box-shadow: 2px 0px 14px rgba(0,0,0,.6);/*sombra*/
+}
+.btnnav:hover::after, .btn1O:hover::after/*bloque del medio*/{
+  opacity: 1;/*opacidad del pseudoelemento ::after*/
+  width: 120%;/*ancho del pseudoelemento ::after*/
+  }
+.btnnav::before/*Bloque Final*/{
+  content: '';/*Ultima capa del bloque 3*/
+  width: 0%;/*ancho bloque3*/
+  height: 100%;/*alto bloque3*/
+  display: block;/*bloque que ocupará todo el ancho disponible dentro del botón*/
+  background: #FFF9C1;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);/*Transformacion de inclinacion horizontal*/
+  left: -10%;/*Inicio de la transicion*/
+  opacity: 1;/*Botn totalmente visible*/
+  top: 0;/*margen superior de la transicion*/
+  z-index: -12;/*No se superpone a nada*/
+  -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);/*propiedades de transicion*/
+  box-shadow:2px 0px 14px rgba(0,0,0,.6);/*sombra*/
+} 
+.btnnav:hover::before, .btn1O:hover::before/*Bloque Final*/{
+opacity:1;/*opacidad del pseudoelemento ::before*/
+width: 120%;/*ancho del pseudoelemento ::before*/
+}
+
+
+  /*Configuracion general de la propiedad button*/
+  button:last-child {
+      margin-right: 0;
+  }
+  
+  /*Configuracion general de la propiedad button*/
+  button:hover {
+      background-color: #FFF9C1; /*Color Transicion*/
+      color: #5E7C67; /*Color Letra Transicion*/
+  }
+
+
+
+  .contenedor_boton2 {
+    display: flex;
+    align-items: center;
+    justify-items: space-between(500px);
+    margin-inline: 100px;
+  }
+

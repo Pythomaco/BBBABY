@@ -1,0 +1,53 @@
+<!-- Navigation.vue o donde sea que tengas tu menú de navegación -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "estilos.css"> <!--EstiloLetras1-->
+    <link rel = "stylesheet" href = "estilos_head.css" type = "text/css"> <!--EstiloBotones1-->
+    <link rel = "stylesheet" href = "estilos_footer.css" type = "text/css" /> <!--Estilo botones2-->
+    <link rel = "stylesheet" href = "Logo.css" type = "text/css"> <!--Estilo Logo-->
+    <link rel = "stylesheet" href = "estilos_footer_Orientacion.css" type = "text/css" /> <!--Config orientazion-->
+    <link rel = "stylesheet" href = "estilos_boutique.css">
+    <link rel = "stylesheet" href = "estilos_home.css">
+    <link rel = "stylesheet" href = "estilos_quienes_somos.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <body style = "background-color: #CBE3C7;"></body>
+    <title>BBBaby · Home</title>
+
+<body>
+<template> <!---------------------------------------------------------------ENLACES------------------------------------------------------>
+  <div>
+      <router-link to="/">BBBaby</router-link>
+      <router-link to="/boutique">Boutique</router-link>
+      <router-link to="/quienes_somos">Quiénes somos</router-link>
+      <router-link to="/visitanos">Visítanos</router-link>
+      <!-- Otros enlaces del sitio -->
+  </div>
+</template>
+   <!---------------------------------------------------------------------¿?¿?¿?¿?¿??¿?¿??¿?¿?¿----------------------------------------------------->
+  <script>
+  // Puedes necesitar importar 'router-link' si no está disponible globalmente
+  export default {
+    // Lógica del componente de navegación      ???????????????????????????
+  }
+  </script>
+  
+  <style scoped>
+  /* Estilos específicos del componente de navegación */
+  </style>
+
+<!-------------------------------------------------------------------------------BOTONES--------------------------------------------------->
+<div class = "contenedornav">
+  <nav>
+    <button class = "btnnav" onclick="window.location.href = 'home.html'">BBBaby</button>
+    <button class = "btnnav" onclick="window.location.href = 'boutique.html'">Boutique</button>
+    <button class = "btnnav" onclick="window.location.href = 'quienes_somos.html'">Quiénes somos</button>
+    <button class = "btnnav" onclick="window.location.href = 'visitanos.html'">Visítanos</button>
+    <button class = "btnnav" style = "font-family: Arial, sans-serif;">&#xf290;</button>
+  </nav>
+</div>
+
+</body>
+
+</html>

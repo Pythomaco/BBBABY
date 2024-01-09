@@ -1,0 +1,27 @@
+.contenedor-quienes {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+.texto-quienes {
+    text-align: center;
+    margin-left: 50px; /*Margen*/
+    margin-right: 100px;
+    font-size: 120%; /*Tamaño letra*/
+    letter-spacing: 3px;
+    line-height: 150%;
+  }
+  
+.titulo-quienes {
+    margin-left: 50px; /*Margen*/
+    font-size: 150%; /*Tamaño letra*/
+    letter-spacing: 3px; /*Espacio entre Letras*/
+  }
+
+  
+.foto-equipo {
+    width: 380px; /*Ancho de imagen*/
+    height: 380px; /*Largo de imagen*/
+    vertical-align: right;
+  }

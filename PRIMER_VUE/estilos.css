@@ -1,0 +1,123 @@
+@font-face {
+    font-family:'MiFuente';
+    src: url('Adigiana.woff') format('woff');
+}
+
+body{
+    font-family:'MiFuente';
+    color: #5E7C67;
+}
+
+/*---------------------------------------------------------------A PARTIR DE AQUÍ, SON ESTILOS QUE CREO QUE NO SE USAN,--------------------------------------------------------------------
+--------------------------------------------------------------------PERO QUIZÁ HAYA QUE UTILIZARLOS EN EL FUTURO--------------------------------------------------------------------*/
+
+/* Estilos para el contenedor del iframe */
+.instagram-embed-container {
+    max-width: 100%; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    height: 500px;
+  }
+  
+
+
+ /*FEED INSTAGRAM*/
+
+ #feed-contenedor {
+  background-color: #CBE3C7;
+  margin: 5rem 0;
+  width: 100%;
+ }
+
+ .main-galery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative; 
+ }
+
+ .chevron span {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  font-size: 2rem;
+  color: #5E7C67;
+  width: 4.3rem;
+  height: 4.7rem;
+  background-color: #CBE3C7;
+  border: 100%;
+  cursor: pointer;
+ }
+
+ .chevron span:hover{
+  background-color: #CBE3C7;
+ }
+
+ .chevron #prev{
+  padding-right: .5rem;
+  justify-content: flex-end;
+  left: -1.7rem;
+ }
+
+ .galery {
+  display: flex;
+  flex-wrap: nowrap;
+ }
+
+ .image {
+  min-width: 20%;
+  height: 273px;
+  position: relative;
+ }
+
+ .image img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.image:hover .opacity-hover {
+  width: 100%;
+}
+
+.caption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transform: translateY(300px);
+  transition: transform 100ms linear;
+}
+
+.opacity-hover:hover .caption {
+  transform: translateY(0px);
+}
+
+.caption p {
+  color: white;
+  width: 80%;
+}
+
+.opacity-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: background-color 300ms linear;
+}
+
+.opacity-hover:hover {
+  background-color: #FFF9C1;
+}
+
+.contenedor-galery {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.desplegable-boutique {
+  align-self: right;
+}

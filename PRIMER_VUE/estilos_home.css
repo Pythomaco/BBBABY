@@ -1,0 +1,173 @@
+/*----------------------------------------------------------------TÍTULO Y LOGO----------------------------------------------------------------*/
+
+.contenedor1 {
+    display: flex;
+    align-items: center; /*Ubiacion del texto*/
+}
+
+.logo {
+  width: 380px; /*Ancho de imagen*/
+  height: 380px; /*Largo de imagen*/
+  vertical-align: center;
+}
+
+.texto-titulo {
+    margin-left: 50px; /*Margen*/
+    font-size: 170%; /*Tamaño letra*/
+    letter-spacing: 3px; /*Espacio entre Letras*/
+}
+  
+.button1 {/*----------------------------------------------------------------CATÁLOGO BBBABY----------------------------------------------------------------*/
+  display: inline-block; 
+  text-align: center; 
+  padding: 7px 15px 7px 15px; 
+  border-radius: 20px;
+  border: none;  
+  font-size: 20px; 
+  letter-spacing: 0.5cqmin;
+  text-decoration: none;
+  font-family:'MiFuente';
+  cursor: pointer;
+  color: #CBE3C7;
+  background-color: #5E7C67;
+  transition: background-color 1s, color 1s; 
+  margin-right: 75px;
+}
+
+/*----------------------------------------------------------------BOTONES CON LOS DIBUJOS----------------------------------------------------------------*/
+
+.contenedor2 {                             
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Añadimos position relative al contenedor */
+}
+
+.contenedor2 button {
+  margin: 1cm;
+  margin-top: 5cm;
+}
+
+.contenedor2 img {
+  margin: 1cm;
+  margin-top: -0.7%;
+  justify-content: space-between;
+}
+
+.contenedor2 nav {
+  position: relative; /* Añadimos position relative a cada nav */
+}
+
+.contenedor2 .dibujos {
+  position: absolute; /* Hacemos que las imágenes sean absolutas */
+  top: 50%; /* Ajustamos la posición verticalmente */
+  left: 45%; /* Ajustamos la posición horizontalmente */
+  transform: translate(-50%, -50%); /* Centramos las imágenes */
+  z-index: -1; /* Enviamos las imágenes detrás de los botones */
+}
+
+.dibujos {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background-image: url('Dibujo1');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+.button2_1 {
+  display: inline-block; /*Horientacion de Boton*/
+  text-align: center; /*No afecta pero se deja*/
+  padding: 7px 15px 7px 15px; /*tamaño espacio.arr&espacio.derc&espacio.abj&espacio.izq*/
+  border-radius: 20px; /*Tamaño Borde*/
+  border: none; /*Color Borde*/ 
+  font-size: 20px; /*Tamaño de letra*/
+  letter-spacing: 0.5cqmin; /*Espacio entre letras*/
+  text-decoration: none;
+  font-family:'MiFuente'; /*Tipo de fuente*/
+  cursor: pointer;
+  color: #CBE3C7; /*Color Letra*/
+  background-color: #5E7C67; /*Color Fondo*/
+  transition: background-color 1s, color 1s; /*Time Transicion de color*/
+  margin-right: 100px; /*Distancia entre Botones*/
+  margin-top: 34%;
+  background-image:url(Dibujo2.png);
+  justify-items: space-between(50px);
+}
+
+.button2_2 {
+  display: inline-block; /*Horientacion de Boton*/
+  text-align: center; /*No afecta pero se deja*/
+  padding: 7px 15px 7px 15px; /*tamaño espacio.arr&espacio.derc&espacio.abj&espacio.izq*/
+  border-radius: 20px; /*Tamaño Borde*/
+  border: none; /*Color Borde*/ 
+  font-size: 20px; /*Tamaño de letra*/
+  letter-spacing: 0.5cqmin; /*Espacio entre letras*/
+  text-decoration: none;
+  font-family:'MiFuente'; /*Tipo de fuente*/
+  cursor: pointer;
+  color: #CBE3C7; /*Color Letra*/
+  background-color: #5E7C67; /*Color Fondo*/
+  transition: background-color 1s, color 1s; /*Time Transicion de color*/
+  margin-right: 75px; /*Distancia entre Botones*/
+  margin-top: 32%;
+  background-image:url(Dibujo1.png);
+  justify-items: space-between(50px);
+}
+
+.button2_3 {
+  display: inline-block; /*Horientacion de Boton*/
+  text-align: center; /*No afecta pero se deja*/
+  padding: 7px 15px 7px 15px; /*tamaño espacio.arr&espacio.derc&espacio.abj&espacio.izq*/
+  border-radius: 20px; /*Tamaño Borde*/
+  border: none; /*Color Borde*/ 
+  font-size: 20px; /*Tamaño de letra*/
+  letter-spacing: 0.5cqmin; /*Espacio entre letras*/
+  text-decoration: none;
+  font-family:'MiFuente'; /*Tipo de fuente*/
+  cursor: pointer;
+  color: #CBE3C7; /*Color Letra*/
+  background-color: #5E7C67; /*Color Fondo*/
+  transition: background-color 1s, color 1s; /*Time Transicion de color*/
+  margin-right: 75px; /*Distancia entre Botones*/
+  margin-top: 35%;
+  background-image:url(Dibujo3.png);
+  justify-items: space-between(50px);
+}
+
+.button2_1 + .dibujos {
+  top: calc(50% + 20px); /* Ajusta el valor para centrar la imagen con el botón 2_1 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button2_2 + .dibujos {
+  top: calc(50% + 20px); /* Ajusta el valor para centrar la imagen con el botón 2_2 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button2_3 + .dibujos {
+  top: calc(50% + 20px); /* Ajusta el valor para centrar la imagen con el botón 2_3 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*----------------------------------------------------------------FEED INSTAGRAM----------------------------------------------------------------*/
+
+.lineaHead {
+  border-top: 2px solid #86B594; /*TamañaV y color*/
+  height: 0.5cm; /* Espacio entre el siguiente bloque */
+  max-width: none; /* Largo de línea */
+  margin: 20px auto 0 auto;
+}
+
+/* Estilos para el iframe */
+.instagram-embed-container-iframe {
+  max-width: 100%; /* Cambia el ancho */
+  height: 500px; /* Cambia el alto */
+  border: none; /* Elimina el borde del iframe si lo deseas */
+  margin-right: 15px
+}

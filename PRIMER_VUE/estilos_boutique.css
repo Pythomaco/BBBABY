@@ -1,0 +1,96 @@
+/* Estilos básicos para la galería */
+
+/*----------------------------------------------------------------CONTENEDOR TIENDA GENERAL----------------------------------------------------------------*/
+
+/*.contenedor-tienda-gral {
+  display: flex
+}*/
+
+/*----------------------------------------------------------------MENÚ COMPRAR POR----------------------------------------------------------------*/
+
+/*.menu-comprar-por {
+  display: flex
+}*/
+
+/*----------------------------------------------------------------PRODUCTOS DE LA TIENDA----------------------------------------------------------------*/
+
+.contenedor-productos-boutique {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Columnas automáticas */
+  gap: 20px; /* Espacio entre elementos */
+  justify-content: center;
+}
+
+.producto {
+  text-align: center;
+  border: 2px solid #5E7C67;
+}
+
+.imagen-cuadrada {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+  
+.imagen-cuadrada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-items: center;
+}
+
+.imagen-cuadrada:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.etiqueta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(33%);
+  transition: bottom 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Agregamos una transición para el texto */
+  opacity: 0;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.imagen-cuadrada:hover .etiqueta {
+  bottom: 10px; /* Muestra la etiqueta */
+  opacity: 0.8; /* Hace visible la etiqueta */
+  background-color: #5E7C67;
+  color: white;
+  letter-spacing: 0.4cap;
+}
+
+.descripcion-producto {
+  margin-bottom: 20px;
+}
+  
+.btn-carrito {
+  display: inline-block;
+  text-align: center; 
+  padding: 5px 5px 5px 5px; 
+  border-radius: 20px; 
+  border: none; 
+  font-size: 20px; 
+  letter-spacing: 0.5cqmin; 
+  text-decoration: none;
+  font-family:'MiFuente'; 
+  cursor: pointer;
+  color: #CBE3C7;
+  background-color: #5E7C67;
+  transition: background-color 1s, color 1s; 
+  margin-right: 75px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+  
